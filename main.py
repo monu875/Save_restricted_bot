@@ -51,9 +51,9 @@ def upstatus(statusfile,message):
             txt = upread.read()
         try:
             bot.edit_message_text(message.chat.id, message.id, f"__Uploaded__ : **{txt}**")
-            time.sleep(10)
+            time.sleep(0)
         except:
-            time.sleep(5)
+            time.sleep(1)
 
 
 # progress writter
